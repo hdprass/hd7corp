@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* ----------- HEADER ----------- */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 5%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(66, 66, 66);
+  margin-left: 4rem;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #3498db;
+}
+
+/* ----------- MAIN ----------- */
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+section {
+  padding: 6rem 5% 2rem;
+
+  min-height: 100vh;
+}
+
+/* ----------- HOME ----------- */
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-content h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+span {
+  color: #3498db;
+}
+
+.home-img img {
+  border-radius: 10px;
+  width: 33vw;
+}
+
+/* ----------- SERVICES ----------- */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services h2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.services-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.services-box {
+  justify-content: center;
+  text-align: center;
+}
+
+.services-box img {
+  border-radius: 10px;
+  width: 18vw;
+}
+
+.services-desc h3,
+.services-desc p {
+  margin-top: 1rem;
+  font-weight: 700px;
+}
+
+/* ----------- ABOUT ----------- */
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.about-img img {
+  width: 22vw;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  text-align: left;
+  margin: 1rem 1%;
+}
+
+/* ----------- CONTACT ----------- */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.input-box input,
+.text-area textarea {
+  width: 80%;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  outline: 1px solid #3498db;
+  background-color: rgba(43, 40, 40, 0.199);
+  margin: 5px;
+  padding: 10px;
+}
+
+.text-area {
+  width: 100%;
+}
+
+.contact form .btn {
+  color: white;
+  background-color: #236997;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2 ease;
+}
+
+.contact form .btn:hover {
+  background-color: #123852;
+}
+
+/* ----------- ASIDE ----------- */
+aside {
+  margin: 8rem 4rem 2rem 0rem;
+  padding: 0rem 1% 2rem;
+  width: 50vw;
+  border: 2px solid rgb(15, 15, 15);
+  box-shadow: 0 0 10px #3498db75;
+  transition: transform 0.3s ease-in-out;
+  color: white;
+  font-size: 1rem;
+  background-color: black;
+  text-align: center;
+}
+
+.profile-card {
+  margin-top: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.profile-card img {
+  width: 8vw;
+}
+
+.biografi {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.biografi h4 {
+  margin-bottom: 1rem;
+}
+
+.biografi table th {
+  text-align: left;
+}
+
+.mediasupport {
+  margin-top: 100rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7rem;
+  border-radius: 10px;
+}
+
+.mediasupport img {
+  width: 10vw;
+  border-radius: 10px;
+}
+
+/* -------- FOTER ------- */
+footer {
+  padding: 1rem 9%;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+
+/* -------- RESPONSIVE WEB -------- */
+
+/* LARGE */
+@media only screen and (max-width: 1200px) {
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+  }
+  .home-content h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  .home-content p {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .home-img img {
+    width: 55vw;
+  }
+  .home-content {
+    text-align: center;
+  }
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .services-box {
+    margin-bottom: 2rem;
+  }
+  .services-box img {
+    width: 40vw;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .about-img img {
+    width: 40vw;
+  }
+  .about-content h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-content p {
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+  }
+  aside {
+    margin: 8rem 2rem 2rem 0rem;
+  }
+  .mediasupport {
+    margin-top: 180rem;
+    gap: 3rem;
+  }
+  .mediasupport img {
+    width: 20vw;
+    border-radius: 10px;
+  }
+}
+
+/* TABLET */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .navbar a {
+    font-size: 1rem;
+    margin-left: 3rem;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+    margin-top: 2rem;
+  }
+  .home-img img {
+    width: 55vw;
+  }
+  .home-content {
+    text-align: center;
+  }
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .services-box {
+    margin-bottom: 2rem;
+  }
+  .services-box img {
+    width: 40vw;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .about-img img {
+    width: 40vw;
+  }
+  .about-content h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-content p {
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+  }
+  aside {
+    margin: 8rem 2rem 2rem 0rem;
+  }
+  .mediasupport {
+    margin-top: 180rem;
+    gap: 3rem;
+  }
+  .mediasupport img {
+    width: 20vw;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  section {
+    padding: 6rem 5% 2rem;
+  }
+  header img {
+    width: 60px;
+    height: 60px;
+  }
+  .navbar a {
+    font-size: 0.8rem;
+    margin-left: 0.7rem;
+  }
+  .home {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .home-img img {
+    width: 85vw;
+  }
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+  }
+  .services-box {
+    margin-bottom: 2rem;
+  }
+  .services-box img {
+    width: 40vw;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+  }
+  .about-img img {
+    margin-top: 2rem;
+    width: 60vw;
+  }
+
+  .about-content {
+    margin-top: 2rem;
+  }
+  .about-content p {
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+  }
+  aside {
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+  .profile-card img {
+    width: 35vw;
+  }
+  .biografi {
+    font-size: 0.8rem;
+  }
+  .mediasupport {
+    margin-top: 5rem;
+    gap: 2.5rem;
+  }
+  .mediasupport img {
+    width: 40vw;
+  }
+}
